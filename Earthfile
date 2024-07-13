@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 WORKDIR /go-workdir
 
 build:
-    COPY main.go .
+    # COPY main.go .
     COPY math .
     COPY run.sh .
     RUN bash run.sh
